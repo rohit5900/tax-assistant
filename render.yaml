@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: tax-buddy-ai
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python wsgi.py
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: DEBUG
+        value: False
+      - key: PORT
+        value: 10000 

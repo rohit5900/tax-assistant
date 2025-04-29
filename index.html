@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tax Assistant Buddy - Your AI-powered tax consultation assistant">
+    <meta name="keywords" content="tax, assistant, AI, consultation, tax help, tax advice">
+    <meta name="author" content="Tax Assistant Buddy">
+    <title>Tax Assistant Buddy - AI Tax Consultation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-calculator" aria-hidden="true"></i> Tax Assistant Buddy</h1>
+            <p>Your AI-powered tax consultation assistant</p>
+        </header>
+        
+        <main class="chat-container" role="main">
+            <div class="chat-messages" id="chat-messages" role="log" aria-live="polite">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        Hello! I'm your Tax Assistant Buddy. How can I help you with your tax-related questions today?
+                    </div>
+                </div>
+            </div>
+            
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    id="user-input" 
+                    placeholder="Type your tax-related question here..." 
+                    autocomplete="off"
+                    aria-label="Type your question"
+                >
+                <button id="send-button" aria-label="Send message">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                </button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
